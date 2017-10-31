@@ -1,0 +1,90 @@
+.row1{
+height: 480px;
+
+}
+
+.row2{
+
+
+}
+
+ .row1 a ,
+ .row2 a ,
+ .row3 a 
+ {
+	display: block;
+	position:relative;
+	
+	padding: 15px 20px;
+	margin-top:-37px;
+	background: rgba(117, 12, 61, 0.7);
+	bottom: 12px;
+	
+	-webkit-border-radius: px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+ .row1 a:hover {
+	background: rgba(130, 12, 61, 0.9);
+}
+
+
+
+h1 {
+	font-size:24px;
+	color:#F5C501;
+	padding:10px 0 20px 0;
+}
+
+h2 {
+	font-size:24px;
+	color:#F5C501;
+	padding:10px 20px 20px 20px;
+}
+
+h3 {
+	background: #474644 none repeat scroll 0 0;
+	padding: 10px;
+	margin-left: 0;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFF;
+}
+
+a:hover , a:hover .box,  a:hover .small-box{
+	color:#F5C501;
+	text-decoration:none;
+}
+
+h3 a {
+	text-decoration:none;
+}
+
+.box, .small-box {
+	margin: 0;
+	padding: 5px;
+	background: #ffffff none repeat;
+}
+
+.small-box {
+	margin-bottom: 3px;
+	font-size: 13px;	
+}
+
+.small-box > img {
+	float: left;
+	margin-right: 10px;
+}
+
+a .box, a .small-box {
+	color: #535353;
+}
+

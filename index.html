@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Інтернет-банкінг</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link href="css/menyu.css" rel="stylesheet" type="text/css" />
+<link href="css/slider.css" rel="stylesheet" type="text/css" />
+<link href="css/styless.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+		$(document).ready(function() {
+		 $(".slider").each(function () { // обрабатываем каждый слайдер
+		  var obj = $(this);
+		  $(obj).append("<div class='nav'></div>");
+		  $(obj).find("li").each(function () {
+		   $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
+		   $(this).addClass("slider"+$(this).index());
+		  });
+		  $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
+		 });
+		});
+		function sliderJS (obj, sl) { // slider function
+		 var ul = $(sl).find("ul"); // находим блок
+		 var bl = $(sl).find("li.slider"+obj); // находим любой из элементов блока
+		 var step = $(bl).width(); // ширина объекта
+		 $(ul).animate({marginLeft: "-"+step*obj}, 500); // 500 это скорость перемотки
+		}
+		$(document).on("click", ".slider .nav span", function() { // slider click navigate
+		 var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
+		 $(sl).find("span").removeClass("on"); // убираем активный элемент
+		 $(this).addClass("on"); // делаем активным текущий
+		 var obj = $(this).attr("rel"); // узнаем его номер
+		 sliderJS(obj, sl); // слайдим
+		 return false;
+		});
+</script>
+</head>
+<body>
+
+<div id="container">
+    <div id="header">
+    	<div class="logo"><a href="index.html"><img src="images/2.png"  alt=""></a></div>
+        <div class="menu">
+        	<ul>
+            	<li class="active"><a href="">Контакти</a></li>
+                <li class="" ><a href="index.php">Про нас </a></li>
+                
+                <li class=""><a href="index.php">Місцезнаходження</a></li>
+
+            </ul>
+        </div>
+
+<div id="container1">
+<ul id="menu1">
+
+  <li><a href="rax.html">Рахунок</a>
+		
+	</li>
+	<li><a href="depozut.html">Депозит</a>
+		
+	</li>
+	<li><a href="kredut.html">Кредит</a>
+		
+	</li>
+	<li><a href="index.php">Увійти в активний режим</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+        <div class="clearfloat"></div>
+        <div class="headerPic">
+  
+
+  <div class="slider">
+			<ul>
+				<li><img src="images/shop/pict1.jpg" alt=""></li>
+				<li><img src="images/shop/1.jpg" alt=""></li>
+				<li><img src="images/shop/3.jpg" alt=""></li>
+				<li><img src="images/shop/2.jpg" alt=""></li>
+				<li><img src="images/shop/4.jpg" alt=""></li>
+			</ul>
+		</div>
+        </div>
+    
+    </div>
+
+    <!-- end #header -->
+    <!-- begin #sidebar1 -->
+   
+    <!-- end #sidebar1 -->
+    <!-- begin #mainContent -->
+    <div id="mainContent">
+         <h3>Контроль руху коштів</h3>
+<div class="row1">
+    
+      <img src="images/shop/8.jpg" alt=""  width="100%" height:"200px" />	
+   <a href="rax.html">Переглянути операцію</a>
+              
+               	</div>
+
+              <h3>Поповнення депозиту</h3>
+<div class="row2">
+    
+        <img src="images/shop/9.jpg" alt=""  width="100%" height:"100px" />					
+          <a href="depozut.html">Переглянути операцію</a>
+        
+         </div>
+
+ <h3>Пoгашення кредитної заборгованості</h3>
+<div class="row3">
+    
+        <img src="images/shop/10.png" alt=""  width="100%" height:"200px" />	
+          <a href="kredut.html">Переглянути операцію</a>
+	    
+
+           </div>
+           	</div>
+    <!-- end #mainContent -->
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+    <div class="welcome">
+    	<h1>Welcome</h1>
+        
+    <h4>Інтернет-банкінг</h4>
+    <br>
+    <p>
+<t></t>Власники депозитних рахунків можуть отримати інформацію про залишок на рахунку, строк дії договору, відсоткову ставку та суму нарахованих на вклад процентів. За умовами депозитних вкладів з поповненням, маючи картковий рахунок, клієнт може поповнити власний депозитний рахунок з власного карткового рахунку.
+</p>
+<p>
+<t></t>До кредитних рахунків (та рахунків, що супроводжують погашення кредиту) належать рахунок основної заборгованості за кредитом та рахунки для погашення кредиту і сплати комісійної винагороди. Параметри основного рахунку надають інформацію про загальну суму кредиту, суму поточної заборгованості, строк дії договору та процентну ставку і суму, яку клієнт повинен сплатити в поточному платіжному періоді.
+</p>
+        Власники карткових рахунків (держателі платіжних карток Діамантбанку) мають можливість дізнатися залишок на рахунку на даний момент, сформувати виписку, заблокувати чи розблокувати картку.
+<t><p>
+Крім того, власники поточних та карткових рахунків можуть здійснювати грошові перекази – як з метою поповнення депозиту чи сплати кредиту, так і на будь-які інші рахунки у будь-якому банку України (зокрема, за комунальні послуги, електроенергію, телефон, паркінг, послуги Internet-провайдерів тощо). Безпека здійснення переказів гарантується використанням унікальних ідентифікаторів клієнта та встановленням лімітів одного переказу.
+</t>
+</p>
+
+
+       </div>
+    
+ 
+    <!-- begin #footer -->
+    <div id="footer">
+	<div class="f_block">
+		<h2>Фірма</h2>
+		<ul>
+			<li><a href="#">Про нас</a></li>
+			<li><a href="#">Співпраця</a></li>
+		</ul>
+	</div>
+	<div class="f_block">
+		<h2>Контакт</h2>
+		<ul>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Телефон</a></li>
+			<li><a href="#">Зворотній зв'язок</a></li>
+			<li><a href="#">Пропозиції та критика</a></li>
+		</ul>
+	</div>
+	</div>
+
+	</div>
+    
+    <!-- end #footer -->
+</div>
+<!-- end #container -->
+</body>
+</html>

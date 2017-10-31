@@ -1,0 +1,195 @@
+* {
+	margin:0;
+	padding:0;
+}
+body  {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#f8efe8 url(images/websiteBackground.jpg) repeat-x left top;
+	color:#535353;
+}
+h2 {
+	font-size:24px;
+	color:#F5C501;
+	padding:10px 20px 20px 20px;
+}
+h3 {
+	font-size:24px;
+	color:#F5C501;
+	padding:10px 0 20px 0;
+}
+h1 {
+	font-size:24px;
+	color:#F5C501;
+	padding:10px 0 20px 0;
+}
+img {
+	border:0;
+}
+
+a {
+	color:#F8EFE8;
+	text-decoration:underline;
+}
+a:hover {
+	color:#F5C501;
+	text-decoration:none;
+}
+#container { 
+	width: 980px;  
+	margin: 0 auto;
+} 
+#header { 
+}
+.logo {
+	float:left;
+	padding:0px 0 0px 0;
+	margin:0;
+}
+.menu {
+	float:right;
+	padding:30px 0 0 0;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+}
+.menu li {
+	list-style:none;
+	display:inline;
+	padding:0 0 0 20px;
+}
+.menu li a {
+	color:#b6b9bb;
+	font-size:12px;
+	text-decoration:none;
+	padding:5px 7px;
+}
+.menu li a:hover {
+	color:#ffffff;
+	font-size:12px;
+	text-decoration:none;
+	background:#ca2818;
+	padding:5px 7px;
+}
+.menu .active a {
+	color:#ffffff;
+	font-size:12px;
+	text-decoration:none;
+	background:#ca2818;
+	padding:5px 7px;
+}
+.headerPic {
+	
+	height:600px;
+	width:980px;
+}
+.headerText1 {
+	font-size:36px;
+	color:#ca2818;
+	padding:20px 0 0 50px;
+} 
+.headerText2 {
+	font-size:18px;
+	color:#474644;
+	padding:0 0 0 50px;
+}
+.icons {
+	margin:4px 3px 0px 3px;
+	padding:10px 0 0 50px;
+}
+.icons li {
+	list-style:none;
+	display:inline;
+}
+.headerPicture {
+	float:left;
+	padding-right:30px;
+}
+.picPrice {
+	padding:10px 0 0 50px;
+}
+.picPrice span {
+	font-size:60px;
+	color:#c21c0a;
+}
+.buttonStyle {
+	border:0;
+	cursor:pointer;
+	font-size:24px;
+	border-bottom:1px solid #aa978a;
+	border-right:1px solid #aa978a;
+	color:#ffffff;
+	background: #ffb401;
+	padding:2px 7px 2px 7px;
+}
+
+#mainContent { 
+	margin: 10px 0 0 0px; 
+}
+
+
+.productPicture {
+	padding: 10px 10px 10px 10px;
+}
+
+.welcome {
+	padding:20px 0;
+}
+.aboutUs {
+	padding:20px;
+	background:#ffffff;
+   height: 300px;
+}
+.aboutUs p {
+ padding-bottom: 20px;
+	
+}
+.picLeft {
+	float:left;
+	padding:0 25px 20px 0;
+}
+#footer {
+	background:#474644 url(images/footerBackground.jpg) repeat-x left top;
+	color:#bdb9b9;
+	padding:30px 0;
+	font-size:11px;
+	height: 200px;
+}
+#footer ul li {
+	padding: 8px;
+}
+
+#footer .f_block {
+	float: left;
+	width: 180px;
+	margin: 20px 40px;
+}
+
+#footer .f_block h2 {
+	padding: 5px 0;
+}
+
+#footer .f_block ul li {
+	padding: 2px 0;
+}
+
+#footer .f_block ul li a {
+	font-size: 12px;
+}
+
+#footer .f_block ul li a:hover {
+	text-decoration: underline;
+}
+
+#footer #soc_network {
+    float: right;
+    margin: 20px 140px 0 0;
+    text-align: center;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
